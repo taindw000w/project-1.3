@@ -298,6 +298,7 @@ ul,li,p,h1,h2,h3,h4,h5,h6 {
 }
 
 .image__logo {
+  display: block;
   max-width: 1190px;
 }
 
@@ -333,7 +334,7 @@ ul,li,p,h1,h2,h3,h4,h5,h6 {
     border-radius: 20px;
     border: none;
     background-color: #FF3E79;
-    background-image: url('/img/phone.svg');
+    background-image: url('../img/phone.svg');
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
@@ -349,7 +350,7 @@ ul,li,p,h1,h2,h3,h4,h5,h6 {
     border-radius: 20px;
     border: none;
     background-color: #FF3E79;
-    background-image: url('/img/message.svg');
+    background-image: url('../img/message.svg');
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
@@ -365,7 +366,7 @@ ul,li,p,h1,h2,h3,h4,h5,h6 {
     border-radius: 20px;
     border: none;
     background-color: #FF3E79;
-    background-image: url('/img/profile.svg');
+    background-image: url('../img/profile.svg');
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
@@ -517,7 +518,7 @@ ul,li,p,h1,h2,h3,h4,h5,h6 {
     height: 40px;
     margin-right: 16px;
     border-radius: 20px;
-    background-image: url('/img/Group.svg');
+    background-image: url('../img/Group.svg');
     background-color: #FF3E79;
     background-repeat: no-repeat;
     background-position: center;
