@@ -121,7 +121,7 @@ ul,li,p,h1,h2,h3,h4,h5,h6 {
 }
 .limiter-wrapper__logo {
   position: relative;
-  top: 0px;
+  top: 2px;
 }
 .flex-container-links {
   display: flex;
@@ -135,6 +135,7 @@ ul,li,p,h1,h2,h3,h4,h5,h6 {
   align-items: center;
   flex-basis: 153.73px;
 }
+
 .wrapper-btn-default {
   display: flex;
   justify-content: space-between;
@@ -147,7 +148,7 @@ ul,li,p,h1,h2,h3,h4,h5,h6 {
   width: 40px;
   height: 40px;
   border-radius: 20px;
-  background-image: url('/img/img-svg/Group.svg');
+  background-image: url('/img/Group.svg');
   background-color: #FF3E79;
   background-repeat: no-repeat;
   background-position: center;
@@ -176,7 +177,7 @@ ul,li,p,h1,h2,h3,h4,h5,h6 {
   width: 40px;
   height: 40px;
   border-radius: 20px;
-  background-image: url('/img/img-svg/icon.svg');
+  background-image: url('/img/icon.svg');
   background-color: #FF3E79;
   background-repeat: no-repeat;
   background-position: center;
@@ -277,7 +278,7 @@ ul,li,p,h1,h2,h3,h4,h5,h6 {
   font-size: 16px;
   line-height: 24px;
   padding-left: 32px;
-  background-image: url('/img/img-svg/arrow.svg');
+  background-image: url('/img/arrow.svg');
   background-origin: padding-box;
   background-position: top 6px left 8px;
   background-repeat: no-repeat;
@@ -332,7 +333,7 @@ ul,li,p,h1,h2,h3,h4,h5,h6 {
     border-radius: 20px;
     border: none;
     background-color: #FF3E79;
-    background-image: url('/img/img-svg/phone.svg');
+    background-image: url('/img/phone.svg');
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
@@ -348,7 +349,7 @@ ul,li,p,h1,h2,h3,h4,h5,h6 {
     border-radius: 20px;
     border: none;
     background-color: #FF3E79;
-    background-image: url('/img/img-svg/message.svg');
+    background-image: url('/img/message.svg');
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
@@ -364,7 +365,7 @@ ul,li,p,h1,h2,h3,h4,h5,h6 {
     border-radius: 20px;
     border: none;
     background-color: #FF3E79;
-    background-image: url('/img/img-svg/profile.svg');
+    background-image: url('/img/profile.svg');
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
@@ -516,7 +517,7 @@ ul,li,p,h1,h2,h3,h4,h5,h6 {
     height: 40px;
     margin-right: 16px;
     border-radius: 20px;
-    background-image: url('/img/img-svg/Group.svg');
+    background-image: url('/img/Group.svg');
     background-color: #FF3E79;
     background-repeat: no-repeat;
     background-position: center;
@@ -534,7 +535,7 @@ ul,li,p,h1,h2,h3,h4,h5,h6 {
     height: 40px;
     margin-right: 16px;
     border-radius: 20px;
-    background-image: url('img/img-svg/icon.svg');
+    background-image: url('img/icon.svg');
     background-color: #FF3E79;
     background-repeat: no-repeat;
     background-position: center;
