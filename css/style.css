@@ -236,7 +236,7 @@ ul,li,p,h1,h2,h3,h4,h5,h6 {
   padding: 8px 9.3px 8px 16.54px;
   justify-content: center;
   align-items: center;
-  margin-right: 19.56px;
+  margin-right: 5.56px;
   list-style-type: none;
   border: 2px solid transparent;
   transition: 0.2s;
@@ -534,7 +534,7 @@ ul,li,p,h1,h2,h3,h4,h5,h6 {
     height: 40px;
     margin-right: 16px;
     border-radius: 20px;
-    background-image: url('/img/img-svg/icon.svg');
+    background-image: url('img/img-svg/icon.svg');
     background-color: #FF3E79;
     background-repeat: no-repeat;
     background-position: center;
