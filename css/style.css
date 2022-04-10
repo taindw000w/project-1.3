@@ -249,7 +249,7 @@ h6 {
   background: #EAEAEA;
   border-radius: 1px;
 }
-.wrapper-btn-default .wrapper-btn-defaul__search {
+.wrapper-btn-default__search {
   width: 40px;
   height: 40px;
   border-radius: 20px;
@@ -262,7 +262,7 @@ h6 {
   transition: 1s;
   cursor: pointer;
 }
-.wrapper-btn-default .wrapper-btn-defaul__search:hover {
+.wrapper-btn-default__search:hover {
   background-color: #b41b49;
 }
 

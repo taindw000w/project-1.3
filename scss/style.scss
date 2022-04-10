@@ -196,10 +196,7 @@ h6 {
     top: 2px;
   }
 
-
 }
-
-
 
 .flex-container-links {
   display: flex;
@@ -244,7 +241,7 @@ h6 {
     border-radius: 1px;
   }
 
-  .wrapper-btn-defaul__search {
+  &__search {
     width: 40px;
     height: 40px;
     border-radius: 20px;
@@ -257,11 +254,9 @@ h6 {
     cursor: pointer;
   }
 
-  .wrapper-btn-defaul__search:hover {
+  &__search:hover {
     background-color: #b41b49;
   }
-
-
 }
 
 
