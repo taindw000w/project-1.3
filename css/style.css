@@ -56,6 +56,10 @@ h6 {
 
 .drop-down-menu {
   display: none;
+}
+
+.drop-down-menu_active {
+  display: block;
   width: 100%;
   height: 121%;
   position: absolute;
@@ -65,6 +69,8 @@ h6 {
           box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
   -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
           transform: matrix(-1, 0, 0, 1, 0, 0);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .indent {
@@ -112,8 +118,10 @@ h6 {
           align-items: center;
   -webkit-transition: 1s;
   transition: 1s;
+  z-index: 2;
+  cursor: pointer;
 }
-.union-container__link:active .union-container__menu-burger::after {
+.union-container .line-first_active {
   width: 20px;
   top: 20px;
   left: 10px;
@@ -122,12 +130,12 @@ h6 {
   -webkit-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
-.union-container__link:active .union-container__line {
+.union-container .line-center_active {
   display: none;
   -webkit-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
-.union-container__link:active .union-container__menu-burger::before {
+.union-container .line-third_active {
   width: 20px;
   top: 20px;
   left: 10px;
@@ -162,7 +170,7 @@ h6 {
 .union-container__menu-burger:hover {
   background-color: #b41b49;
 }
-.union-container__menu-burger::after {
+.union-container__line-first {
   content: "";
   position: absolute;
   top: 13px;
@@ -171,8 +179,10 @@ h6 {
   height: 2px;
   background: #FFFFFF;
   border-radius: 1px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
-.union-container__line {
+.union-container__line-center {
   position: absolute;
   top: 20px;
   left: 11px;
@@ -180,11 +190,13 @@ h6 {
   height: 2px;
   background: #FFFFFF;
   border-radius: 1px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .union-container__line-before {
   display: none;
 }
-.union-container__menu-burger::before {
+.union-container__line-third {
   content: "";
   position: absolute;
   top: 27px;
@@ -193,6 +205,8 @@ h6 {
   height: 2px;
   background: #FFFFFF;
   border-radius: 1px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .union-container__logo {
   position: relative;
