@@ -1,0 +1,93 @@
+.header-container-desktop {
+  display: none;
+
+  @media (min-width: 1120px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 42px 28.65px 0px 0px;
+  }
+}
+
+@media (min-width: 1120px) {
+  .header-desktop-block {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+  }
+
+  .header-desktop-block__text {
+    margin-right: 8px;
+    text-decoration: none;
+    letter-spacing: -0.2px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    color: #1B1C21;
+  }
+
+  .header-container-desktop__title {
+    display: flex;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-family: 'TT Lakes Bold';
+  }
+
+  .header-container-desktop__title::before {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 40px;
+    margin-right: 12px;
+    background: #41F6D7;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+
+  .header-desktop-block__btn-option {
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+    border-radius: 20px;
+    background-image: url('../img/Group.svg');
+    background-color: #FF3E79;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    transition: .3s;
+    cursor: pointer;
+  }
+
+  .header-desktop-block__btn-option:hover {
+    background-color: #ffe0e9;
+  }
+
+
+  .header-desktop-block__btn-search {
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+    border-radius: 20px;
+    background-image: url('../img/icon.svg');
+    background-color: #FF3E79;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    transition: .3s;
+    cursor: pointer;
+  }
+
+  .header-desktop-block__btn-search:hover {
+    background-color: #ffe0e9;
+  }
+
+  .service-container {
+    padding: 0px 28.65px 47px 0px;
+  }
+}
