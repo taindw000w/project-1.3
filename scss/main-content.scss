@@ -150,30 +150,30 @@
 }
 
 .swiper {
-  max-width: 320px;
+  max-width: 100%;
   height: 130px;
 
   @media (min-width: 480px) {
     max-width: 500px;
   }
 
-  @media (min-width: 1120px) {
-    max-width: 916px;
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+    margin-right: 0;
+    overflow: hidden;
+    max-width: 100%;
   }
-
 }
 
 .swiper-second {
   position: relative;
-  max-width: 320px;
+  max-width: 100%;
   height: 217px;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
   overflow: hidden;
   list-style: none;
   padding: 0;
-  z-index: 1;
 
   .swiper-pagination-second {
     position: absolute;
@@ -183,24 +183,39 @@
   }
 
   @media (min-width: 480px) {
-    max-width: 500px;
+    max-width: 521px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+    margin-right: 0;
+    overflow: hidden;
+    max-width: 100%;
   }
 
   @media (min-width: 1120px) {
-    max-width: 948px;
+    max-width: 990px;
   }
-
-
 }
 
 .swiper-wrapper {
-  padding-left: 12px;
+  padding-left: 16px;
+  box-sizing: border-box;
+
+  @media (min-width: 768px) {
+    padding-left: 32px;
+  }
 }
 
 .swiper-slide {
   display: flex;
-  height: 122px;
   padding: 16px 0;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: 248px;
+    margin-right: -7px;
+  }
 
   &__item {
     display: flex;
@@ -215,7 +230,6 @@
     padding: 0 16px;
     cursor: pointer;
     transition: all 0.4s;
-
   }
 
   &__button {
@@ -231,7 +245,6 @@
     background: transparent;
     transition: all 0.4s;
     cursor: pointer;
-
   }
 
   &__button:hover {
@@ -273,6 +286,10 @@
   width: 10px;
   height: 10px;
   background: #bdbdbd;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
 .swiper-pagination-bullet-active {
@@ -384,7 +401,7 @@
 
 .swiper-third {
   position: relative;
-  max-width: 320px;
+  max-width: 100%;
   height: 253px;
   margin-left: auto;
   margin-right: auto;
@@ -395,7 +412,7 @@
   z-index: 1;
 
   @media (min-width: 480px) {
-    max-width: 460px;
+    max-width: 569px;
   }
 
   @media (min-width: 768px) {
@@ -417,6 +434,7 @@
   background: #FFFFFF;
   border-radius: 6px;
   padding: 16px 16px 20px 16px;
+  cursor: pointer;
 
   &__title {
     font-size: 14px;
@@ -438,10 +456,10 @@
 
 .swiper-container-desktop {
   display: none;
-  padding: 0px 32px 32px 32px;
+  padding: 0px 1px 32px 32px;
 
   @media (min-width: 768px) {
-    width: 100%;
+    width: 98%;
     display: flex;
     flex-direction: column;
     align-items: center;

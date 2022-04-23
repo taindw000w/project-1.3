@@ -18,10 +18,10 @@
         </button>
         <div class="drop-down-sidebar-union">
           <p class="drop-down-sidebar-union__paragraph">Обратная связь</p>
-          <form class="drop-down-form" action="">
+          <form class="drop-down-form" method="post" action="#">
             <input type="text" class="drop-down-form__text" placeholder="Имя">
             <input type="tel" class="drop-down-form__phone" placeholder="Телефон">
-            <input type="mail" class="drop-down-form__mail" placeholder="Электронная почта">
+            <input type="email" class="drop-down-form__mail" placeholder="Электронная почта">
             <textarea name="text" class="drop-down-form__message" id="text" cols="30" rows="20"
               placeholder="Сообщение"></textarea>
           </form>
@@ -29,7 +29,28 @@
             соглашаетесь с нашей политикой
             конфиденциальности</p>
           <form class="drop-down-submit" action="get">
-            <input type="submit" class="drop-down-submit__btn" placeholder="Отправить">
+            <input type="submit" class="drop-down-submit__btn" value="Отправить">
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="drop-down-sidebar-call">
+      <div class="drop-down-sidebar-wrapper-call">
+        <button type="button" class="drop-down-button-call">
+          <span class="drop-down-button-call__line-top"></span>
+          <span class="drop-down-button-call__line-bottom"></span>
+        </button>
+        <div class="drop-down-sidebar-union-call">
+          <p class="drop-down-sidebar-union-call__paragraph">Заказать звонок</p>
+          <form class="drop-down-form-call" method="post" action="#">
+            <input type="tel" class="drop-down-form-call__phone" placeholder="Телефон">
+          </form>
+          <p class="drop-down-sidebar-union-call__text">Нажимая “отправить”, вы даете согласие на обработку персональных данных и
+            соглашаетесь с нашей политикой
+            конфиденциальности</p>
+          <form class="drop-down-submit-call" action="get">
+            <input type="submit" class="drop-down-submit-call__btn" value="Отправить">
           </form>
         </div>
       </div>
@@ -39,9 +60,7 @@
       <div class="drop-down-wrapper">
         <div class="flex-container">
           <img class="drop-down-wrapper__logo" src="img/logo.svg" alt="image">
-          <button class="drop-down-wrapper__search">
-            <a href="#" class="drop-down-wrapper__link"></a>
-          </button>
+          <button class="drop-down-wrapper__search"></button>
         </div>
       </div>
       <nav class="drop-down-nav">
@@ -98,7 +117,6 @@
           <div class="limiter-wrapper indent">
             <div class="union-container">
               <button class="union-container__menu-burger">
-                <a href="#" class="union-container__link"></a>
                 <span class="union-container__line-first"></span>
                 <span class="union-container__line-center"></span>
                 <span class="union-container__line-third"></span>
@@ -153,7 +171,7 @@
                 <a class="slider-services__link" title="Цены на услуги" href="#">Цены на услуги</a>
               </li>
               <li class="slider-services__item">
-                <a class="slider-services__link"title="Специальные цены" href="#">Специальные цены</a>
+                <a class="slider-services__link" title="Специальные цены" href="#">Специальные цены</a>
               </li>
               <li class="slider-services__item">
                 <a class="slider-services__link" title="Адреса сервисных центров" href="#">Адреса сервисных центров</a>
@@ -188,61 +206,51 @@
             <h2 class="section-swiper-container__title">Ремонт техники различных брендов</h2>
             <div class="swiper">
               <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
+              <div class="swiper-wrapper swiper-wrapper_desktop">
                 <!-- Slides -->
                 <div class="swiper-slide">
                   <div class="swiper-slide__item">
                     <img class="swiper-slide__img" src="/img/Acer.png" alt="logo-brand">
-                      <a class="swiper-slide__link" href="#">
                       <button class="swiper-slide__button">
                         <span class="swiper-slide__line1"></span>
                         <span class="swiper-slide__line2"></span>
                       </button>
-                    </a>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="swiper-slide__item">
                     <img class="swiper-slide__img" src="/img/HP.png" alt="logo-brand">
-                      <a class="swiper-slide__link" href="#">
                       <button class="swiper-slide__button">
                         <span class="swiper-slide__line1"></span>
                         <span class="swiper-slide__line2"></span>
                       </button>
-                    </a>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="swiper-slide__item">
                     <img class="swiper-slide__img" src="/img/lenovo.png" alt="logo-brand">
-                      <a class="swiper-slide__link" href="#">
                       <button class="swiper-slide__button">
                         <span class="swiper-slide__line1"></span>
                         <span class="swiper-slide__line2"></span>
                       </button>
-                    </a>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="swiper-slide__item">
                     <img class="swiper-slide__img" src="/img/Bosch.png" alt="logo-brand">
-                      <a class="swiper-slide__link" href="#">
                       <button class="swiper-slide__button">
                         <span class="swiper-slide__line1"></span>
                         <span class="swiper-slide__line2"></span>
                       </button>
-                    </a>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="swiper-slide__item">
                     <img class="swiper-slide__img" src="/img/Samsung.png" alt="logo-brand">
-                      <a class="swiper-slide__link" href="#">
                       <button class="swiper-slide__button">
                         <span class="swiper-slide__line1"></span>
                         <span class="swiper-slide__line2"></span>
                       </button>
-                    </a>
                   </div>
                 </div>
               </div>

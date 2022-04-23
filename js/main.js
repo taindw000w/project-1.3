@@ -39,7 +39,5 @@ const unionMouseOut = burger.addEventListener("mouseout", function () {
   burger.style.backgroundColor = "#FF3E79";
 });
 
-console.log(main)
-
 
 

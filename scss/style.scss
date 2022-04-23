@@ -42,11 +42,19 @@
 @import 'header-desktop';
 @import 'main-content';
 @import 'drop-down-menu';
+@import 'sidebar-call';
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+@media (min-width: 31.25em) {
+  body {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
 }
 
 html,
