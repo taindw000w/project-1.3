@@ -1010,7 +1010,7 @@
   line-height: 20px;
   letter-spacing: 0.2px;
   color: #1B1C21;
-  background: url("/img/Line.svg") bottom 17px right 84px no-repeat;
+  background: url("../img/Line.svg") bottom 17px right 84px no-repeat;
 }
 
 .swiper-container-main hr {
@@ -1621,7 +1621,7 @@
 .drop-down-submit__btn {
   width: 136px;
   height: 32px;
-  background: url("/img/dropdown.svg") no-repeat center right 10px #FF3E79;
+  background: url("../img/dropdown.svg") no-repeat center right 10px #FF3E79;
   border-radius: 16px;
   font-size: 12px;
   line-height: 24px;
@@ -1797,7 +1797,7 @@
 .drop-down-submit-call__btn {
   width: 136px;
   height: 32px;
-  background: url("/img/dropdown.svg") no-repeat center right 10px #FF3E79;
+  background: url("../img/dropdown.svg") no-repeat center right 10px #FF3E79;
   border-radius: 16px;
   font-size: 12px;
   line-height: 24px;
