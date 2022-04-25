@@ -60,8 +60,13 @@
 .drop-down-sidebar-call_active {
   display: block;
   max-height: 100%;
+  width: 100%;
   transition: 1s;
-  right: 0px;
+
+  @media (min-width: 768px) {
+    right: 0;
+    width: 420px;
+  }
 }
 
 .drop-down-sidebar-wrapper-call {
@@ -86,6 +91,59 @@
   border: none;
   cursor: pointer;
 
+
+  &__line-top {
+    position: absolute;
+    left: 23%;
+    bottom: 47%;
+    width: 21.73px;
+    height: 2.17px;
+    background: #FFFFFF;
+    border-radius: 1px;
+    transform: rotate(45deg);
+  }
+
+  &__line-bottom {
+    position: absolute;
+    left: 23%;
+    bottom: 47%;
+    width: 21.73px;
+    height: 2.17px;
+    background: #FFFFFF;
+    border-radius: 1px;
+    transform: matrix(-0.71, 0.71, 0.71, 0.71, 0, 0);
+  }
+}
+
+
+.drop-down-button-call {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: #FF3E79;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: 480px) {
+    display: none;
+  }
+}
+
+.drop-down-button-call-desktop {
+  display: none;
+
+  @media (min-width: 480px) {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: #FF3E79;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+  }
 
   &__line-top {
     position: absolute;

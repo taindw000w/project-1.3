@@ -32,12 +32,5 @@ burger.addEventListener("click", clickerDesktopElems);
 burger.addEventListener("click", clicker);
 
 
-const unionMouseEnter = burger.addEventListener("mouseenter", function () {
-  burger.style.backgroundColor = "#b41b49";
-});
-const unionMouseOut = burger.addEventListener("mouseout", function () {
-  burger.style.backgroundColor = "#FF3E79";
-});
-
 
 

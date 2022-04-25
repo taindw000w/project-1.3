@@ -143,61 +143,63 @@ hr {
     justify-content: space-between;
     flex-basis: 158px;
 
-  }
-
-  .wrapper-btn-links__phone-btn {
-    display: block;
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    border: none;
-    background-color: #FF3E79;
-    background-image: url('../img/phone.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-    transition: 1s;
-
-    .wrapper-btn-links__phone-btn:hover {
-      background-color: #b41b49;
+    &__phone-btn {
+      display: block;
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      border: none;
+      background-color: #FF3E79;
+      background-image: url('../img/phone.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+      transition: .3s;
     }
+
+    &__phone-btn:hover {
+      background-color: #eb95ae;
+    }
+
+    &__message-btn {
+      display: block;
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      border: none;
+      background-color: #FF3E79;
+      background-image: url('../img/message.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+      transition: .3s;
+    }
+
+    &__message-btn:hover {
+      background-color: #eb95ae;
+    }
+
+    &__profile-btn {
+      display: block;
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      border: none;
+      background-color: #FF3E79;
+      background-image: url('../img/profile.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+      transition: .3s;
+    }
+
+    &__profile-btn:hover {
+      background-color: #eb95ae;
+    }
+
   }
 
-  .wrapper-btn-links__message-btn {
-    display: block;
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    border: none;
-    background-color: #FF3E79;
-    background-image: url('../img/message.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-    transition: 1s;
-  }
 
-  .wrapper-btn-links__message-btn:hover {
-    background-color: #b41b49;
-  }
-
-  .wrapper-btn-links__profile-btn {
-    display: block;
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    border: none;
-    background-color: #FF3E79;
-    background-image: url('../img/profile.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-    transition: 1s;
-  }
-
-  .wrapper-btn-links__profile-btn:hover {
-    background-color: #b41b49;
-  }
 
   .limiter-service-info {
     display: flex;

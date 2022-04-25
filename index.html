@@ -9,13 +9,19 @@
   <title>Document</title> 
 </head>
 <body>
-  <main class="main-container">
+  <div class="main-container">
     <div class="drop-down-sidebar">
       <div class="drop-down-sidebar-wrapper">
-        <button type="button" class="drop-down-button">
-          <span class="drop-down-button__line-top"></span>
-          <span class="drop-down-button__line-bottom"></span>
-        </button>
+        <div class="btn-desktop-wrapper">
+          <button type="button" class="drop-down-button">
+            <span class="drop-down-button__line-top"></span>
+            <span class="drop-down-button__line-bottom"></span>
+          </button>
+          <button type="button" class="drop-down-button-call-desktop">
+            <span class="drop-down-button-call-desktop__line-top"></span>
+            <span class="drop-down-button-call-desktop__line-bottom"></span>
+          </button>
+        </div>
         <div class="drop-down-sidebar-union">
           <p class="drop-down-sidebar-union__paragraph">Обратная связь</p>
           <form class="drop-down-form" method="post" action="#">
@@ -37,10 +43,16 @@
 
     <div class="drop-down-sidebar-call">
       <div class="drop-down-sidebar-wrapper-call">
-        <button type="button" class="drop-down-button-call">
-          <span class="drop-down-button-call__line-top"></span>
-          <span class="drop-down-button-call__line-bottom"></span>
-        </button>
+        <div class="btn-desktop-wrapper">
+          <button type="button" class="drop-down-button-call">
+            <span class="drop-down-button-call__line-top"></span>
+            <span class="drop-down-button-call__line-bottom"></span>
+          </button>
+          <button type="button" class="drop-down-button-call-desktop">
+            <span class="drop-down-button-call__line-top"></span>
+            <span class="drop-down-button-call__line-bottom"></span>
+          </button>
+        </div>
         <div class="drop-down-sidebar-union-call">
           <p class="drop-down-sidebar-union-call__paragraph">Заказать звонок</p>
           <form class="drop-down-form-call" method="post" action="#">
@@ -154,7 +166,7 @@
         </div>
       </header>
 
-      <section class="section-main-content container">
+      <main class="section-main-content container">
         <h2 class="section-main-content__title">
           Услуги и сервисы
         </h2>
@@ -418,14 +430,13 @@
           </div>
         </div>
 
-        <div class="info-cost">
-          <p class="info-cost__text">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на
-          постоянное обслуживание, оставьте заявку.</p>
-          <p class="info-cost__text-offer">Получить коммерческое предложение</p>
-        </div>
-        <hr>
-      </div>
-      </section>
+          <div class="info-cost">
+            <p class="info-cost__text">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на
+            постоянное обслуживание, оставьте заявку.</p>
+            <p class="info-cost__text-offer">Получить коммерческое предложение</p>
+          </div>
+          <hr>
+      </main>
       
       <footer class="section-footer">
         <div class="footer-wrapper">
@@ -442,7 +453,7 @@
         </div>
       </footer>
     </section>
-  </main>
+  </div>
 
 
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>

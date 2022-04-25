@@ -1,6 +1,4 @@
 const dropMenu = document.querySelector(".drop-down-menu");
-const nav = document.querySelector(".drop-down-nav");
-const linkConnection = document.querySelector(".drop-down-btn-links");
 const wrapBtnLinks = document.querySelector(".wrapper-btn-links");
 const wrapBtnLinkMessage = document.querySelector(".wrapper-btn-links__message-btn");
 const wrapBtnLinkPhone = document.querySelector(".wrapper-btn-links__phone-btn");
@@ -9,69 +7,82 @@ const wrapBtnLinkPhone = document.querySelector(".wrapper-btn-links__phone-btn")
 const sideBar = document.querySelector(".drop-down-sidebar");
 const sideBarCall = document.querySelector(".drop-down-sidebar-call");
 const sideBarButton = document.querySelector(".drop-down-button");
-const sideBarCallButton = document.querySelector(".drop-down-button-call");
 const sideBarPhoneButton = document.querySelector(".drop-down-btn-links__phone-btn");
 const sideBarMessageButton = document.querySelector(".drop-down-btn-links__message-btn");
+
+const btnDesktopWrapper = document.querySelector(".btn-desktop-wrapper");
 const sideBarBurgCall = document.querySelector(".drop-down-button-call");
+const deleteBtn = document.querySelector(".drop-down-button-call-desktop");
+
 //burgerMenu
 const burgerMenu = document.querySelector(".union-container__menu-burger");
 //body
 const body = document.querySelector("body");
 const section = document.querySelector(".section");
 
-
-burgerMenu.addEventListener("click", function () {
-  body.classList.toggle("inactive_body");
+burgerMenu.addEventListener('click', function () {
+  (function () {
+    if (body.classList.contains != "inactive_body") {
+      body.classList.toggle("inactive_body")
+    } 
+  }())
+  
 })
 
-wrapBtnLinkPhone.addEventListener("click", function () {
-  body.classList.add("inactive_body");
-  burgerMenu.style.display = "none";
+//phone drop-down-buttons and sidebar
+const clickPhoneBtn = sideBarPhoneButton.addEventListener('click', function () {
+  sideBarCall.classList.add("drop-down-sidebar-call_active");
   section.style.opacity = "0.2";
-  dropMenu.style.opacity = "0.2";
-  sideBarCall.style.transition = ".4s";
-  sideBarCall.classList.toggle("drop-down-sidebar-call_active");
-});
-
-sideBarPhoneButton.addEventListener("click", function () {
-  burgerMenu.style.display = "none";
-  body.classList.toggle("inactive_body");
-  section.style.opacity = "0.2";
-  dropMenu.style.opacity = "0.2";
-  sideBarCall.style.transition = ".4s";
-  sideBarCall.classList.toggle("drop-down-sidebar-call_active");
-});
-
-sideBarBurgCall.addEventListener("click", function () {
-  burgerMenu.style.display = "flex";
+  if (body.classList.contains == "inactive_body") {
+    return;
+  } 
+})
+const outClickPhoneBtn = sideBarBurgCall.addEventListener("click", function () {
+  sideBarCall.classList.remove("drop-down-sidebar-call_active");
   section.style.opacity = "1";
-  dropMenu.style.opacity = "1";
-  sideBarCall.classList.toggle("drop-down-sidebar-call_active");
-  body.classList.remove("inactive_body");
 });
 
-sideBarMessageButton.addEventListener("click", function () {
-  body.classList.add("inactive_body");
-  burgerMenu.style.display = "none";
-  section.style.opacity = "0.2";
-  dropMenu.style.opacity = "0.2";
-  sideBar.style.transition = ".4s";
-  sideBar.classList.toggle("drop-down-sidebar_active");
-  
-});
 
-wrapBtnLinkMessage.addEventListener("click", function () {
-  burgerMenu.style.display = "none";
-  section.style.opacity = "0.2";
-  dropMenu.style.opacity = "0.2";
-  sideBar.style.transition = ".4s";
+// message drop-down-buttons and sidebar
+const clickMessageBtn = sideBarMessageButton.addEventListener('click', function () {
   sideBar.classList.add("drop-down-sidebar_active");
+  section.style.opacity = "0.2";
+});
+const outMessageBtn = sideBarButton.addEventListener("click", function () {
+  sideBar.classList.remove("drop-down-sidebar_active");
+  section.style.opacity  = "1";
 });
 
-sideBarButton.addEventListener("click", function () {
-  sideBar.classList.remove("drop-down-sidebar_active");
-  body.classList.remove("inactive_body");
-  burgerMenu.style.display = "flex";
-  section.style.opacity = "1";
-  dropMenu.style.opacity = "1";
+
+// desktop phone header buttons and sidebar
+const wrapPhoneBtn = wrapBtnLinkPhone.addEventListener('click', function () {
+  sideBarCall.classList.add("drop-down-sidebar-call_active");
+  section.style.opacity = "0.2";
+  body.classList.add("inactive_body");
+  if (sideBarCall.classList.contains == "drop-down-sidebar-call_active") {
+    deleteBtn.addEventListener("click", function () {
+      sideBarCall.classList.remove("drop-down-sidebar-call_active");
+      section.style.opacity = "1";
+      body.classList.remove("inactive_body");
+    });
+  }
 });
+
+
+// desktop message header buttons and sidebar
+const wrapMessageBtn = wrapBtnLinkMessage.addEventListener(
+  "click",
+  function () {
+    sideBar.classList.add("drop-down-sidebar_active");
+    section.style.opacity = "0.2";
+    body.classList.add("inactive_body");
+  }
+);
+const wrapOutMessageBtn = deleteBtn.addEventListener("click", function () {
+  sideBar.classList.remove("drop-down-sidebar_active");
+  section.style.opacity = "1";
+  body.classList.remove("inactive_body");
+});
+
+
+

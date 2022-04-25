@@ -25,23 +25,27 @@ let swiper = new Swiper(slider, {
 
 
 let swiperSecond = new Swiper(sliderSecond, {
-    direction: "horizontal",
-    slidesPerView: 1.5,
-    loop: true,
-    spaceBetween: 25,
+  direction: "horizontal",
+  slidesPerView: 1.5,
+  loop: true,
+  spaceBetween: 25,
 
-    // If we need pagination
-    pagination: {
-      el: ".swiper-pagination-second",
-      type: "bullets",
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination-second",
+    type: "bullets",
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1.5,
+      spaceBetween: 25,
     },
-    breakpoints: {
-      480: {
-        slidesPerView: 2,
-        spaceBetween: 1,
-      },
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 5,
     },
-  });
+  },
+});
 
   const swiperThird = new Swiper(sliderThird, {
     direction: "horizontal",

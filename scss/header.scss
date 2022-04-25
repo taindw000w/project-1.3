@@ -72,7 +72,7 @@
   }
 
   &__menu-burger:hover {
-    background-color: #b41b49;
+    background-color: #eb95ae;
   }
 
   &__line-first {
@@ -151,12 +151,12 @@
     background-repeat: no-repeat;
     background-position: center;
     border: none;
-    transition: 1s;
+    transition: .3s;
     cursor: pointer;
   }
 
   &__option-btn:hover {
-    background-color: #b41b49;
+    background-color: #eb95ae;
   }
 
 
@@ -182,12 +182,12 @@
     background-repeat: no-repeat;
     background-position: center;
     border: none;
-    transition: 1s;
+    transition: .3s;
     cursor: pointer;
     z-index: 2;
   }
 
   &__search:hover {
-    background-color: #b41b49;
+    background-color: #eb95ae;
   }
 }
