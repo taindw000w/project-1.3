@@ -57,6 +57,12 @@
   }
 }
 
+.link-text {
+  color: #FF3E79;
+  cursor: pointer;
+}
+
+
 .drop-down-sidebar-call_active {
   display: block;
   max-height: 100%;
@@ -91,6 +97,9 @@
   border: none;
   cursor: pointer;
 
+  @media (min-width: 480px) {
+    display: none;
+  }
 
   &__line-top {
     position: absolute;
@@ -115,9 +124,8 @@
   }
 }
 
-
-.drop-down-button-call {
-  display: block;
+.drop-down-btn-delete {
+  display: none;
   position: relative;
   width: 40px;
   height: 40px;
@@ -127,9 +135,34 @@
   cursor: pointer;
 
   @media (min-width: 480px) {
-    display: none;
+    display: block;
   }
+
+  &__line-top {
+    position: absolute;
+    left: 23%;
+    bottom: 47%;
+    width: 21.73px;
+    height: 2.17px;
+    background: #FFFFFF;
+    border-radius: 1px;
+    transform: rotate(45deg);
+  }
+
+  &__line-bottom {
+    position: absolute;
+    left: 23%;
+    bottom: 47%;
+    width: 21.73px;
+    height: 2.17px;
+    background: #FFFFFF;
+    border-radius: 1px;
+    transform: matrix(-0.71, 0.71, 0.71, 0.71, 0, 0);
+  }
+
 }
+
+
 
 .drop-down-button-call-desktop {
   display: none;

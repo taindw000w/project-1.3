@@ -553,7 +553,8 @@
     margin-left: 0;
     margin-right: 0;
     overflow: hidden;
-    width: 990px;
+    width: 100%;
+    max-width: 1213px;
   }
 }
 
@@ -972,7 +973,10 @@
   width: 119px;
   height: 32px;
   border: none;
-  background: #FF3E79;
+  background-color: #FF3E79;
+  background-image: url("../img/dropdown.svg");
+  background-repeat: no-repeat;
+  background-position: center right 12px;
   border-radius: 16px;
   font-size: 12px;
   line-height: 24px;
@@ -980,6 +984,11 @@
   text-transform: uppercase;
   color: #FFFFFF;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.wrap-container__button-link:hover {
+  background-color: #eb95ae;
 }
 
 .info-cost {
@@ -1424,7 +1433,7 @@
 @media (min-width: 768px) {
   .drop-down-sidebar {
     top: 0;
-    right: -336px;
+    right: 0;
     width: 420px;
   }
 }
@@ -1435,11 +1444,11 @@
   width: 100%;
   -webkit-transition: 1s;
   transition: 1s;
-  left: 0px;
+  right: 0px;
 }
 @media (min-width: 768px) {
   .drop-down-sidebar_active {
-    right: 0px;
+    width: 420px;
   }
 }
 
@@ -1710,6 +1719,11 @@
   margin-bottom: 18px;
 }
 
+.link-text {
+  color: #FF3E79;
+  cursor: pointer;
+}
+
 .drop-down-sidebar-call_active {
   display: block;
   max-height: 100%;
@@ -1752,6 +1766,11 @@
   border: none;
   cursor: pointer;
 }
+@media (min-width: 480px) {
+  .drop-down-button-call {
+    display: none;
+  }
+}
 .drop-down-button-call__line-top {
   position: absolute;
   left: 23%;
@@ -1775,8 +1794,8 @@
           transform: matrix(-0.71, 0.71, 0.71, 0.71, 0, 0);
 }
 
-.drop-down-button-call {
-  display: block;
+.drop-down-btn-delete {
+  display: none;
   position: relative;
   width: 40px;
   height: 40px;
@@ -1786,9 +1805,31 @@
   cursor: pointer;
 }
 @media (min-width: 480px) {
-  .drop-down-button-call {
-    display: none;
+  .drop-down-btn-delete {
+    display: block;
   }
+}
+.drop-down-btn-delete__line-top {
+  position: absolute;
+  left: 23%;
+  bottom: 47%;
+  width: 21.73px;
+  height: 2.17px;
+  background: #FFFFFF;
+  border-radius: 1px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.drop-down-btn-delete__line-bottom {
+  position: absolute;
+  left: 23%;
+  bottom: 47%;
+  width: 21.73px;
+  height: 2.17px;
+  background: #FFFFFF;
+  border-radius: 1px;
+  -webkit-transform: matrix(-0.71, 0.71, 0.71, 0.71, 0, 0);
+          transform: matrix(-0.71, 0.71, 0.71, 0.71, 0, 0);
 }
 
 .drop-down-button-call-desktop {
