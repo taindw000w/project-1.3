@@ -11,17 +11,18 @@
 <body>
   <div class="main-container">
     <div class="drop-down-sidebar">
-      <div class="drop-down-sidebar-wrapper">
+      <div class="left-modal-container"></div>
+      <div class="drop-down-sidebar-wrapper">    
         <div class="btn-desktop-wrapper">
-          <button type="button" class="drop-down-button">
-            <span class="drop-down-button__line-top"></span>
-            <span class="drop-down-button__line-bottom"></span>
+          <button type="button" class="drop-down-button-delete-mobile-sidebar">
+            <span class="drop-down-button-delete-mobile-sidebar__line-top"></span>
+            <span class="drop-down-button-delete-mobile-sidebar__line-bottom"></span>
           </button>
-          <button type="button" class="drop-down-button-call-desktop">
-            <span class="drop-down-button-call-desktop__line-top"></span>
-            <span class="drop-down-button-call-desktop__line-bottom"></span>
+          <button type="button" class="drop-down-btn-delete-desktop-sidebar">
+            <span class="drop-down-btn-delete-desktop-sidebar__line-top"></span>
+            <span class="drop-down-btn-delete-desktop-sidebar__line-bottom"></span>
           </button>
-        </div>
+        </div>   
         <div class="drop-down-sidebar-union">
           <p class="drop-down-sidebar-union__paragraph">Обратная связь</p>
           <form class="drop-down-form" method="post" action="#">
@@ -31,9 +32,9 @@
             <textarea name="text" class="drop-down-form__message" id="text" cols="30" rows="20"
               placeholder="Сообщение"></textarea>
           </form>
-          <p class="drop-down-sidebar-union__text">Нажимая “отправить”, вы даете согласие на <span class='link-text'>обработку персональных данных</span> и
-            соглашаетесь с нашей <span class='link-text'>политикой
-            конфиденциальности</span></p>
+          <p class="drop-down-sidebar-union__text">Нажимая “отправить”, вы даете согласие на <a class='link-text' href='#' title='Соглашение'>обработку персональных данных</a> и
+            соглашаетесь с нашей <a class='link-text' href='#' title='Соглашение'>политикой
+            конфиденциальности</a></p>
           <form class="drop-down-submit" action="get">
             <input type="submit" class="drop-down-submit__btn" value="Отправить">
           </form>
@@ -42,15 +43,16 @@
     </div>
 
     <div class="drop-down-sidebar-call">
+      <div class="left-modal-container"></div>
       <div class="drop-down-sidebar-wrapper-call">
         <div class="btn-desktop-wrapper">
-          <button type="button" class="drop-down-button-call">
-            <span class="drop-down-button-call__line-top"></span>
-            <span class="drop-down-button-call__line-bottom"></span>
+          <button type="button" class="drop-down-button-delete-mobile-sidebar-call">
+            <span class="drop-down-button-delete-mobile-sidebar-call__line-top"></span>
+            <span class="drop-down-button-delete-mobile-sidebar-call__line-bottom"></span>
           </button>
-          <button type="button" class="drop-down-btn-delete">
-            <span class="drop-down-btn-delete__line-top"></span>
-            <span class="drop-down-btn-delete__line-bottom"></span>
+          <button type="button" class="drop-down-btn-delete-desktop-sidebar-call">
+            <span class="drop-down-btn-delete-desktop-sidebar-call__line-top"></span>
+            <span class="drop-down-btn-delete-desktop-sidebar-call__line-bottom"></span>
           </button>
         </div>
         <div class="drop-down-sidebar-union-call">
@@ -58,9 +60,9 @@
           <form class="drop-down-form-call" method="post" action="#">
             <input type="tel" class="drop-down-form-call__phone" placeholder="Телефон">
           </form>
-          <p class="drop-down-sidebar-union-call__text">Нажимая “отправить”, вы даете согласие на <span class='link-text'>обработку персональных данных</span> и
-            соглашаетесь с нашей <span class='link-text'>политикой
-            конфиденциальности</span></p>
+          <p class="drop-down-sidebar-union-call__text">Нажимая “отправить”, вы даете согласие на <a class='link-text' href='#' title='Соглашение'>обработку персональных данных</a> и
+            соглашаетесь с нашей <a class='link-text' href='#' title='Соглашение'>политикой
+            конфиденциальности</a></p>
           <form class="drop-down-submit-call" action="get">
             <input type="submit" class="drop-down-submit-call__btn" value="Отправить">
           </form>
@@ -121,6 +123,7 @@
           </div>
         </div>
       </nav> 
+      <!-- <div class="drop-down-right-inactive"></div> -->
     </div>
 
     <div class="section">
@@ -140,9 +143,9 @@
             </div>
             <div class="flex-container-links">
               <div class="wrapper-btn-links">
-                <a class="wrapper-btn-links__phone-btn" href="#"></a>
-                <a class="wrapper-btn-links__message-btn" href="#"></a>
-                <a class="wrapper-btn-links__profile-btn" href="#"></a>
+                <button class="wrapper-btn-links__phone-btn"></button>
+                <button class="wrapper-btn-links__message-btn"></button>
+                <button class="wrapper-btn-links__profile-btn"></button>
               </div> 
               <div class="wrapper-btn-default">
                 <a class="wrapper-btn-default__option-btn" href="#"></a>
@@ -196,10 +199,10 @@
           <div class="limiter-service-info">
             <div class="service-info">
               <p class="service-info__text">
-                Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.<br><br> Мы успешно работаем с 1992 года и <br>заслужили репутацию надежного партнера
+                Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.<br><br> <span class="opacity-text">Мы успешно работаем с 1992 года и <br>заслужили репутацию надежного партнера</span>
               </p>
               <div class="continue-container">
-                <a class="continue-container__title" href="#">Читать далее</a>
+                <span class="continue-container__title">Читать далее</span>
               </div>
             </div>
         
@@ -436,7 +439,6 @@
           постоянное обслуживание, оставьте заявку.</p>
           <p class="info-cost__text-offer">Получить коммерческое предложение</p>
         </div>
-        <hr>
       </main>
       
       <footer class="section-footer">
@@ -458,6 +460,7 @@
 
 
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/link-drop-down.js"></script>
   <script src="js/main.js"></script>
   <script src="js/drop-down.js"></script>
   <script src="js/slider.js"></script>

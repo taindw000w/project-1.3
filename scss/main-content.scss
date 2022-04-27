@@ -4,7 +4,7 @@
   font-size: 28px;
   font-family: 'TT Lakes Bold';
 
-  @media (min-width: 1120px) {
+  @media (min-width: 1540px) {
     display: none;
   }
 }
@@ -38,6 +38,7 @@
   position: relative;
   background: linear-gradient(270deg, #f8f8f8 17%, hsla(0, 0%, 97.3%, 0));
   padding-top: 24px;
+  border-bottom: 1px solid #D9FFF5;
 }
 
 .slider-menu {
@@ -106,6 +107,9 @@
     line-height: 18px;
     letter-spacing: 0.2px;
     color: #1B1C21;
+    height: 92px;
+    overflow-y: hidden;
+
 
     @media (min-width: 768px) {
       padding-bottom: 10px;
@@ -113,8 +117,20 @@
     }
   }
 
-
+  &__text_active {
+    height: 100%;
+  }
 }
+
+.opacity-text {
+  opacity: 0.4;
+
+  &__active {
+    opacity: 1;
+  }
+}
+
+
 
 .continue-container {
   padding: 16px 16px 0px;
@@ -131,6 +147,7 @@
     letter-spacing: -0.2px;
     color: #1B1C21;
     text-decoration: none;
+    cursor: pointer;
   }
 }
 
@@ -208,7 +225,7 @@
   padding-left: 16px;
   box-sizing: border-box;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1120px) {
     padding-left: 32px;
   }
 }
@@ -548,7 +565,8 @@
   }
 
   &__button-link:hover {
-    background-color: #eb95ae;
+    color: #FF3E79;
+    background-color: #ffe0e9
   }
 }
 
@@ -584,6 +602,7 @@
     letter-spacing: 0.2px;
     color: #1B1C21;
     background: url('../img/Line.svg') bottom 17px right 84px no-repeat;
+    cursor: pointer;
   }
 }
 

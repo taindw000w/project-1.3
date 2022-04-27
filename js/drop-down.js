@@ -1,5 +1,6 @@
-//breakpoint
-const breakpoint = window.matchMedia("(min-width: 1120px)");
+//breakpoints
+const breakpointMobile = window.matchMedia("(min-width: 320px)");
+const breakpointTablet = window.matchMedia("(min-width: 480px)");
 
 //btn desktop
 const dropMenu = document.querySelector(".drop-down-menu");
@@ -11,10 +12,12 @@ const wrapBtnLinkPhone = document.querySelector(
   ".wrapper-btn-links__phone-btn"
 );
 
-//buttonsSidebar
+//left modal 
+const leftModal = document.querySelector(".left-modal-container");
+
+//buttons Sidebar
 const sideBar = document.querySelector(".drop-down-sidebar");
 const sideBarCall = document.querySelector(".drop-down-sidebar-call");
-const sideBarButton = document.querySelector(".drop-down-button");
 const sideBarPhoneButton = document.querySelector(
   ".drop-down-btn-links__phone-btn"
 );
@@ -22,10 +25,13 @@ const sideBarMessageButton = document.querySelector(
   ".drop-down-btn-links__message-btn"
 );
 
-const btnDesktopWrapper = document.querySelector(".btn-desktop-wrapper");
-const sideBarBurgCall = document.querySelector(".drop-down-button-call");
-const deleteBtn = document.querySelector(".drop-down-button-call-desktop");
-const newBtn = document.querySelector(".drop-down-btn-delete");
+// delete buttons mobile
+const deleteMobSideCall = document.querySelector(".drop-down-button-delete-mobile-sidebar-call");
+const deleteMobSide = document.querySelector(".drop-down-button-delete-mobile-sidebar");
+
+// delete buttons desktop
+const deleteDeskSideCall = document.querySelector(".drop-down-btn-delete-desktop-sidebar-call");
+const deleteDeskSide = document.querySelector(".drop-down-btn-delete-desktop-sidebar");
 
 //burgerMenu
 const burgerMenu = document.querySelector(".union-container__menu-burger");
@@ -37,74 +43,86 @@ burgerMenu.addEventListener("click", function () {
   (function () {
     if (body.classList.contains != "inactive_body") {
       body.classList.toggle("inactive_body");
-    }
+    } 
   })();
 });
 
-//phone drop-down-buttons and sidebar
-const clickPhoneBtn = sideBarPhoneButton.addEventListener("click", function () {
-  sideBarCall.classList.add("drop-down-sidebar-call_active");
-  section.style.opacity = "0.2";
-  if (body.classList.contains == "inactive_body") {
-    return;
+
+
+// drop-down-menu phone mob and desk
+
+const activeSidebarCallMobilePhone = sideBarPhoneButton.addEventListener('click', function () {
+  if (breakpointMobile.matches == true) {
+    sideBarCall.classList.add("drop-down-sidebar-call_active");
+    deleteMobSideCall.addEventListener("click", function () {
+      sideBarCall.classList.remove("drop-down-sidebar-call_active");
+    });
+  } 
+});
+
+const activeSidebarCallTabletPhone = sideBarPhoneButton.addEventListener("click", function (event) {
+  if (breakpointTablet.matches == true) {
+    event.preventDefault()
+    body.style.overflow = "hidden";
+    sideBarCall.classList.add("drop-down-sidebar-call_active");
+    deleteDeskSideCall.addEventListener("click", function () {
+      sideBarCall.classList.remove("drop-down-sidebar-call_active");
+      body.style.overflow = "scroll";
+    });
   }
-  (function () {
-    if (breakpoint.matches == true) {
-      body.classList.add("inactive_body");
+});
+
+
+// drop-down-menu message mob and desk
+
+const activeSidebarMobileMessage = sideBarMessageButton.addEventListener('click', function(){
+   if (breakpointMobile.matches == true) {
+     sideBar.classList.add("drop-down-sidebar_active");
+     deleteMobSide.addEventListener("click", function () {
+       sideBar.classList.remove("drop-down-sidebar_active");
+     });
+   } 
+});
+
+const activeSidebarTabletMessage = sideBarMessageButton.addEventListener('click', function(event){
+   if (breakpointTablet.matches == true) {
+     event.preventDefault();
+     body.style.overflow = "hidden";
+     sideBar.classList.add("drop-down-sidebar_active");
+     deleteDeskSide.addEventListener("click", function () {
+       sideBar.classList.remove("drop-down-sidebar_active");
+       body.style.overflow = "scroll";
+     });
+   } 
+}) 
+
+
+// header buttons modal
+
+const activeDesktopPhone = wrapBtnLinkPhone.addEventListener('click', function(){
+  if (breakpointTablet.matches == true) {
+    sideBarCall.classList.add("drop-down-sidebar-call_active");
+    body.style.overflow = "hidden";
+    deleteDeskSideCall.addEventListener("click", function () {
+      sideBarCall.classList.remove("drop-down-sidebar-call_active");
+      body.style.overflow = "scroll";
+    });
+  } 
+})
+
+const activeDesktopMessage = wrapBtnLinkMessage.addEventListener(
+  "click",
+  function () {
+    if (breakpointTablet.matches == true) {
+      sideBar.classList.add("drop-down-sidebar_active");
+      body.style.overflow = "hidden";
+      deleteDeskSide.addEventListener("click", function () {
+        sideBar.classList.remove("drop-down-sidebar_active");
+        body.style.overflow = "scroll";
+      });
     }
-  }());
-});
-const outClickPhoneBtn = sideBarBurgCall.addEventListener("click", function () {
-  sideBarCall.classList.remove("drop-down-sidebar-call_active");
-  section.style.opacity = "1";
-
-});
-
-// message drop-down-buttons and sidebar
-const clickMessageBtn = sideBarMessageButton.addEventListener(
-  "click",
-  function () {
-    sideBar.classList.add("drop-down-sidebar_active");
-    section.style.opacity = "0.2";
-    (function () {
-      if (breakpoint.matches === true) {
-        body.classList.add("inactive_body");
-      }
-    })();
   }
-);
-const outMessageBtn = sideBarButton.addEventListener("click", function () {
-  sideBar.classList.remove("drop-down-sidebar_active");
-  section.style.opacity = "1";
-});
+); 
 
-// desktop phone header buttons and sidebar
-const wrapPhoneBtn = wrapBtnLinkPhone.addEventListener("click", function () {
-  sideBarCall.classList.add("drop-down-sidebar-call_active");
-  section.style.opacity = "0.2";
-  body.classList.add("inactive_body");
-});
-
-const outPhoneBtn = newBtn.addEventListener("click", function () {
-  sideBarCall.classList.remove("drop-down-sidebar-call_active");
-  section.style.opacity = "1";
-  body.classList.remove("inactive_body");
-});
-
-// desktop message header buttons and sidebar
-const wrapMessageBtn = wrapBtnLinkMessage.addEventListener(
-  "click",
-  function () {
-    sideBar.classList.add("drop-down-sidebar_active");
-    section.style.opacity = "0.2";
-    body.classList.add("inactive_body");
-  }
-);
-const wrapOutMessageBtn = deleteBtn.addEventListener("click", function () {
-  sideBarCall.classList.remove("drop-down-sidebar-call_active");
-  sideBar.classList.remove("drop-down-sidebar_active");
-  section.style.opacity = "1";
-  body.classList.remove("inactive_body");
-});
 
 

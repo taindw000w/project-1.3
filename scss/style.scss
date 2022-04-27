@@ -43,6 +43,7 @@
 @import 'main-content';
 @import 'drop-down-menu';
 @import 'sidebar-call';
+@import 'buttons';
 
 *,
 *::before,
@@ -81,6 +82,10 @@ hr {
   padding: 0;
 }
 
+hr {
+  color: #D9FFF5;
+}
+
 .image__logo-768,
 .image__logo-1120,
 .wrapper-btn-links__profile-btn,
@@ -90,13 +95,27 @@ hr {
   display: none;
 }
 
+.section {
+  border-right: 1px solid #D9FFF5;
+  border-left: 1px solid #D9FFF5;
+}
+
 .main-container {
-  @media (min-width: 1120px) {
+  @media (min-width: 1540px) {
     display: flex;
+    justify-content: center;
+    max-width: 1120px;
+    margin: 0 auto;
   }
 }
 
 .container {
+  position: relative;
+  background: linear-gradient(270deg, #f8f8f8 17%, hsla(0, 0%, 97.3%, 0));
+  padding-top: 24px;
+  border-bottom: 1px solid #D9FFF5;
+
+
   @media (min-width: 768px) {
     display: block;
   }
@@ -158,7 +177,7 @@ hr {
     }
 
     &__phone-btn:hover {
-      background-color: #eb95ae;
+      background-color: #ffe0e9;
     }
 
     &__message-btn {
@@ -176,7 +195,7 @@ hr {
     }
 
     &__message-btn:hover {
-      background-color: #eb95ae;
+      background-color: #ffe0e9;
     }
 
     &__profile-btn {
@@ -194,7 +213,7 @@ hr {
     }
 
     &__profile-btn:hover {
-      background-color: #eb95ae;
+      background-color: #ffe0e9;
     }
 
   }
@@ -267,7 +286,7 @@ hr {
   }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 1540px) {
 
   .limiter-wrapper,
   .image__logo-768 {

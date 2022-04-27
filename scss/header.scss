@@ -1,3 +1,12 @@
+.section-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  @media (min-width: 1540px) {
+    position: static;
+  }
+}
+
 .indent {
   padding: 24px 16px;
 }
@@ -65,14 +74,14 @@
     background-repeat: no-repeat;
     background-position: center;
     border: none;
-    transition: 1s;
+    transition: .3s;
     cursor: pointer;
     padding: 0;
     z-index: 2;
   }
 
   &__menu-burger:hover {
-    background-color: #eb95ae;
+    background-color: #ffe0e9;
   }
 
   &__line-first {
@@ -156,7 +165,7 @@
   }
 
   &__option-btn:hover {
-    background-color: #eb95ae;
+    background-color: #ffe0e9;
   }
 
 
@@ -188,6 +197,6 @@
   }
 
   &__search:hover {
-    background-color: #eb95ae;
+    background-color: #ffe0e9;
   }
 }

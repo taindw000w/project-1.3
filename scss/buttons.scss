@@ -1,0 +1,164 @@
+.drop-down-button-delete-mobile-sidebar {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: #FF3E79;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+
+
+  &__line-top {
+    position: absolute;
+    left: 23%;
+    bottom: 47%;
+    width: 21.73px;
+    height: 2.17px;
+    background: #FFFFFF;
+    border-radius: 1px;
+    transform: rotate(45deg);
+  }
+
+  &__line-bottom {
+    position: absolute;
+    left: 23%;
+    bottom: 47%;
+    width: 21.73px;
+    height: 2.17px;
+    background: #FFFFFF;
+    border-radius: 1px;
+    transform: matrix(-0.71, 0.71, 0.71, 0.71, 0, 0);
+  }
+
+  @media (min-width: 479px) {
+    display: none;
+  }
+}
+
+.drop-down-button-delete-mobile-sidebar-call {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: #FF3E79;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+
+  &__line-top {
+    position: absolute;
+    left: 23%;
+    bottom: 47%;
+    width: 21.73px;
+    height: 2.17px;
+    background: #FFFFFF;
+    border-radius: 1px;
+    transform: rotate(45deg);
+  }
+
+  &__line-bottom {
+    position: absolute;
+    left: 23%;
+    bottom: 47%;
+    width: 21.73px;
+    height: 2.17px;
+    background: #FFFFFF;
+    border-radius: 1px;
+    transform: matrix(-0.71, 0.71, 0.71, 0.71, 0, 0);
+  }
+
+  @media (min-width: 479px) {
+    display: none;
+  }
+
+
+}
+
+.drop-down-btn-delete-desktop-sidebar {
+  display: none;
+
+  @media (min-width: 480px) {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #FF3E79;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    top: 36px;
+    right: 467px;
+
+  }
+
+  &__line-top {
+    position: absolute;
+    left: 23%;
+    bottom: 47%;
+    width: 21.73px;
+    height: 2.17px;
+    background: #FFFFFF;
+    border-radius: 1px;
+    transform: rotate(45deg);
+  }
+
+  &__line-bottom {
+    position: absolute;
+    left: 23%;
+    bottom: 47%;
+    width: 21.73px;
+    height: 2.17px;
+    background: #FFFFFF;
+    border-radius: 1px;
+    transform: matrix(-0.71, 0.71, 0.71, 0.71, 0, 0);
+  }
+
+}
+
+
+.drop-down-btn-delete-desktop-sidebar-call {
+  display: none;
+
+  @media (min-width: 480px) {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #FF3E79;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    top: 32px;
+    right: 467px;
+
+  }
+
+  &__line-top {
+    position: absolute;
+    left: 23%;
+    bottom: 47%;
+    width: 21.73px;
+    height: 2.17px;
+    background: #FFFFFF;
+    border-radius: 1px;
+    transform: rotate(45deg);
+  }
+
+  &__line-bottom {
+    position: absolute;
+    left: 23%;
+    bottom: 47%;
+    width: 21.73px;
+    height: 2.17px;
+    background: #FFFFFF;
+    border-radius: 1px;
+    transform: matrix(-0.71, 0.71, 0.71, 0.71, 0, 0);
+  }
+
+}
+
+.btn-desktop-wrapper {
+  margin-bottom: 32px;
+  @media (min-width: 480px) {
+    margin-bottom: 0px;
+  }
+}
