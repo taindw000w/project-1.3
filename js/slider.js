@@ -6,7 +6,7 @@ const swiper = new Swiper(slider, {
   direction: "horizontal",
   slidesPerView: 1.5,
   loop: true,
-  spaceBetween: 25,
+  spaceBetween: 20,
   slidesPerColumn: 2,
 
   // If we need pagination
@@ -15,18 +15,7 @@ const swiper = new Swiper(slider, {
     type: "bullets",
     paginationClickable: true,
   },
-  breakpoints: {
-    480: {
-      slidesPerView: 2,
-      spaceBetween: 5,
-    },
-    768: {
-      autoHeight: false,
-      slidesPerView: 4,
-      spaceBetween: 5,
-      pagination: false,
-    },
-  },
+
 });
 const swiperSecond = new Swiper(sliderSecond, {
   direction: "horizontal",
@@ -40,27 +29,14 @@ const swiperSecond = new Swiper(sliderSecond, {
     type: "bullets",
     paginationClickable: true,
   },
-  breakpoints: {
-    480: {
-      slidesPerView: 2,
-      spaceBetween: 5,
-    },
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 5,
-    },
-    860: {
-      slidesPerView: 4,
-      spaceBetween: 5,
-    },
-  },
+  
 });
 
   const swiperThird = new Swiper(sliderThird, {
     direction: "horizontal",
-    slidesPerView: 1.2,
+    slidesPerView: 1.5,
     loop: true,
-    spaceBetween: 20,
+    spaceBetween: 25,
 
     // If we need pagination
     pagination: {
@@ -69,12 +45,6 @@ const swiperSecond = new Swiper(sliderSecond, {
     },
     enableSwiper: {
       enabled: true,
-    },
-    breakpoints: {
-      480: {
-        slidesPerView: 2,
-        spaceBetween: 5,
-      },
     },
   });
 

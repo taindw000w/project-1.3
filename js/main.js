@@ -6,7 +6,9 @@ const unionLineThird = document.querySelector(".union-container__line-third");
 const dropDownMenu = document.querySelector(".drop-down-menu");
 const burger = document.querySelector(".union-container__menu-burger");
 const container = document.querySelector(".container");
-const deskLinks = document.querySelector(".flex-container-links");
+const deskLinks = document.querySelector(".flex-container");
+const deleteLinks = document.querySelector(".flex-container-links");
+const wrapBtn = document.querySelector(".wrapper-btn-default__option-btn");
 
 
 // body 
@@ -22,10 +24,7 @@ const clicker = () => {
 };
 
 const clickerDesktopElems = () => {
-  main.classList.toggle("inactive");
-  footer.classList.toggle("inactive");
-  container.classList.toggle("container-active");
-  deskLinks.classList.toggle("container-active");
+
 }
 
 burger.addEventListener("click", clickerDesktopElems);
