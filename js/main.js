@@ -17,10 +17,7 @@ const main = document.querySelector(".section-main-content");
 const footer = document.querySelector(".section-footer");
 
 const clicker = () => {
-    unionLineFirst.classList.toggle("line-first_active");
-    unionLineCenter.classList.toggle("line-center_active");
-    unionLineThird.classList.toggle("line-third_active");
-    dropDownMenu.classList.toggle("drop-down-menu_active");
+    dropDownMenu.classList.add("drop-down-menu_active");
 };
 
 const clickerDesktopElems = () => {

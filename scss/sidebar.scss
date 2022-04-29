@@ -40,13 +40,17 @@
     content: "";
     position: absolute;
     top: 0px;
-    left: -32px;
+    left: -17px;
     width: 4px;
     height: 32px;
     background-color: #41f6d7;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     z-index: 20;
+
+    @media (min-width: 480px) {
+      left: -32px;
+    }
   }
 
   &__text {
@@ -98,7 +102,15 @@
   height: 100%;
   background: #FFFFFF;
   border-left: 1px solid #D9FFF5;
-  padding: 36px 32px;
+  padding: 24px 16px;
+
+  box-shadow: -2px 0px 37px rgb(69 79 126 / 90%), 16px 0px 52px rgb(14 24 80 / 17%);
+
+
+  @media (min-width: 480px) {
+    padding: 36px 32px;
+  }
+
 
   &__text {
     font-size: 14px;
@@ -146,17 +158,26 @@
   &__btn {
     width: 136px;
     height: 32px;
-    background: url('../img/dropdown.svg') no-repeat center right 10px #FF3E79;
+    background-color: #FF3E79;
+    background-image: url('../img/dropdown.svg');
+    background-repeat: no-repeat;
+    background-position: center right 10px;
     border-radius: 16px;
     font-size: 12px;
     line-height: 24px;
     letter-spacing: -0.15px;
     text-transform: uppercase;
     color: #FFFFFF;
+    font-weight: bold;
     cursor: pointer;
     border: none;
+    transition: .3s;
   }
 
+  &__btn:hover {
+    background-color: #ffe0e9;
+    color: #FF3E79;
+  }
 }
 
 
@@ -197,6 +218,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
   @media (min-width: 480px) {
     width: 384px;
   }
@@ -214,13 +236,18 @@
     content: "";
     position: absolute;
     top: 0px;
-    left: -32px;
+    left: -17px;
     width: 4px;
     height: 32px;
     background-color: #41f6d7;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     z-index: 20;
+
+    @media (min-width: 480px) {
+      left: -32px;
+    }
+
   }
 
   &__text {
@@ -243,8 +270,13 @@
   width: 440px;
   height: 100%;
   background: #FFFFFF;
-  padding: 40px 32px;
+  padding: 24px 16px;
   border-left: 1px solid #D9FFF5;
+  box-shadow: -2px 0px 37px rgb(69 79 126 / 90%), 16px 0px 52px rgb(14 24 80 / 17%);
+
+  @media (min-width: 480px) {
+    padding: 40px 32px;
+  }
 
   &__text {
     font-size: 14px;
@@ -348,8 +380,11 @@
   &__btn {
     width: 136px;
     height: 32px;
-    background: url('../img/dropdown.svg') no-repeat center right 10px #FF3E79;
-    border-radius: 16px;
+    background-image: url('../img/dropdown.svg');
+    background-repeat: no-repeat;
+    background-position: center right 10px;
+    background-color: #FF3E79;
+    border-radius: 20px;
     font-size: 12px;
     line-height: 24px;
     letter-spacing: -0.15px;
@@ -357,6 +392,12 @@
     color: #FFFFFF;
     cursor: pointer;
     border: none;
+    font-weight: bold;
+    transition: .3s;
   }
 
+  &__btn:hover {
+    background-color: #ffe0e9;
+    color: #FF3E79;
+  }
 }

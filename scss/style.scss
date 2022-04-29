@@ -106,6 +106,7 @@ hr {
 }
 
 .section {
+  position: relative;
   border-left: 1px solid #D9FFF5;
 }
 
@@ -121,6 +122,21 @@ hr {
     display: block;
   }
 }
+
+.drop-down-right-inactive {
+  display: none;
+}
+
+.drop-down-right-inactive_active {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  opacity: 0.8;
+  z-index: 9;
+}
+
 
 .container-active {
   opacity: 0.2;
