@@ -1922,8 +1922,8 @@
 .drop-down-sidebar-call {
   position: fixed;
   top: 0;
+  right: -20000px;
   width: 100%;
-  display: none;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -1931,20 +1931,13 @@
   height: 100%;
   width: 320px;
   z-index: 22;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   border-radius: 1px;
-}
-@media (min-width: 768px) {
-  .drop-down-sidebar-call {
-    top: 0;
-    right: 0;
-    width: 420px;
-  }
 }
 
 .drop-down-sidebar-union-call {
-  width: 320px;
+  width: 100%;
   height: 550px;
 }
 @media (min-width: 480px) {
@@ -1998,7 +1991,7 @@
   height: 100%;
   width: 100%;
   background-color: #fff;
-  opacity: 0.8;
+  opacity: 0.95;
 }
 @media (min-width: 480px) {
   .left-modal-container {
@@ -2012,8 +2005,8 @@
   display: flex;
   max-height: 100%;
   width: 100%;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   right: 0px;
 }
 @media (min-width: 768px) {
@@ -2069,7 +2062,7 @@
   height: 62px;
 }
 .drop-down-form-call__phone {
-  width: 263px;
+  width: 100%;
   height: 48px;
   background: #FFFFFF;
   border: 1px solid #EAEAEA;
@@ -2081,11 +2074,6 @@
   color: #B5B6BC;
   outline: none;
 }
-@media (min-width: 480px) {
-  .drop-down-form-call__phone {
-    width: 100%;
-  }
-}
 
 .drop-down-submit-call {
   display: -webkit-box;
@@ -2095,16 +2083,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-@media (min-width: 480px) {
-  .drop-down-submit-call {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .drop-down-submit-call__btn {
   width: 136px;
@@ -2133,7 +2114,7 @@
 .drop-down-sidebar {
   position: fixed;
   top: 0;
-  display: none;
+  right: -2000px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -2141,8 +2122,8 @@
   height: 100%;
   width: 320px;
   z-index: 22;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   border-radius: 1px;
 }
 @media (min-width: 768px) {
@@ -2157,8 +2138,8 @@
   display: flex;
   max-height: 100%;
   width: 100%;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   right: 0px;
 }
 @media (min-width: 768px) {
@@ -2170,7 +2151,7 @@
 }
 
 .drop-down-sidebar-union {
-  width: 320px;
+  width: 100%;
   height: 510px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2269,7 +2250,7 @@
   height: 310px;
 }
 .drop-down-form__text {
-  width: 288px;
+  width: 100%;
   height: 48px;
   background: #FFFFFF;
   border: 1px solid #EAEAEA;
@@ -2280,14 +2261,9 @@
   letter-spacing: -0.2px;
   color: #B5B6BC;
   outline: none;
-}
-@media (min-width: 480px) {
-  .drop-down-form__text {
-    width: 100%;
-  }
 }
 .drop-down-form__phone {
-  width: 288px;
+  width: 100%;
   height: 48px;
   background: #FFFFFF;
   border: 1px solid #EAEAEA;
@@ -2298,14 +2274,9 @@
   letter-spacing: -0.2px;
   color: #B5B6BC;
   outline: none;
-}
-@media (min-width: 480px) {
-  .drop-down-form__phone {
-    width: 100%;
-  }
 }
 .drop-down-form__mail {
-  width: 288px;
+  width: 100%;
   height: 48px;
   background: #FFFFFF;
   border: 1px solid #EAEAEA;
@@ -2317,13 +2288,8 @@
   color: #B5B6BC;
   outline: none;
 }
-@media (min-width: 480px) {
-  .drop-down-form__mail {
-    width: 100%;
-  }
-}
 .drop-down-form__message {
-  width: 288px;
+  width: 100%;
   height: 118px;
   background: #FFFFFF;
   border: 1px solid #EAEAEA;
@@ -2336,11 +2302,6 @@
   resize: none;
   outline: none;
 }
-@media (min-width: 480px) {
-  .drop-down-form__message {
-    width: 100%;
-  }
-}
 
 .drop-down-submit {
   display: -webkit-box;
@@ -2350,16 +2311,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-@media (min-width: 480px) {
-  .drop-down-submit {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .drop-down-submit__btn {
   width: 136px;

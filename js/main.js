@@ -20,11 +20,7 @@ const clicker = () => {
     dropDownMenu.classList.add("drop-down-menu_active");
 };
 
-const clickerDesktopElems = () => {
 
-}
-
-burger.addEventListener("click", clickerDesktopElems);
 burger.addEventListener("click", clicker);
 
 

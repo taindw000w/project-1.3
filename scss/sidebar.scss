@@ -1,25 +1,19 @@
 .drop-down-sidebar-call {
   position: fixed;
   top: 0;
+  right: -20000px;
   width: 100%;
-  display: none;
   flex-direction: row;
   height: 100%;
   width: 320px;
   z-index: 22;
-  transition: 1s;
+  transition: .5s;
   border-radius: 1px;
-
-  @media (min-width: 768px) {
-    top: 0;
-    right: 0;
-    width: 420px
-  }
 
 }
 
 .drop-down-sidebar-union-call {
-  width: 320px;
+  width: 100%;
   height: 550px;
 
   @media (min-width: 480px) {
@@ -74,7 +68,7 @@
   height: 100%;
   width: 100%;
   background-color: #fff;
-  opacity: 0.8;
+  opacity: 0.95;
 
   @media (min-width: 480px) {
     display: block;
@@ -85,7 +79,7 @@
   display: flex;
   max-height: 100%;
   width: 100%;
-  transition: 1s;
+  transition: .5s;
   right: 0px;
 
   @media (min-width: 768px) {
@@ -127,7 +121,7 @@
 
 
   &__phone {
-    width: 263px;
+    width: 100%;
     height: 48px;
     background: #FFFFFF;
     border: 1px solid #EAEAEA;
@@ -138,10 +132,6 @@
     letter-spacing: -0.2px;
     color: #B5B6BC;
     outline: none;
-
-    @media (min-width: 480px) {
-      width: 100%;
-    }
   }
 }
 
@@ -149,11 +139,7 @@
 .drop-down-submit-call {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-
-  @media (min-width: 480px) {
-    justify-content: flex-end;
-  }
+  justify-content: flex-end;
 
   &__btn {
     width: 136px;
@@ -184,12 +170,12 @@
 .drop-down-sidebar {
   position: fixed;
   top: 0;
-  display: none;
+  right: -2000px;
   flex-direction: row;
   height: 100%;
   width: 320px;
   z-index: 22;
-  transition: 1s;
+  transition: .5s;
   border-radius: 1px;
 
 
@@ -204,7 +190,7 @@
   display: flex;
   max-height: 100%;
   width: 100%;
-  transition: 1s;
+  transition: .5s;
   right: 0px;
 
   @media (min-width: 768px) {
@@ -213,7 +199,7 @@
 }
 
 .drop-down-sidebar-union {
-  width: 320px;
+  width: 100%;
   height: 510px;
   display: flex;
   flex-direction: column;
@@ -293,7 +279,7 @@
   height: 310px;
 
   &__text {
-    width: 288px;
+    width: 100%;
     height: 48px;
     background: #FFFFFF;
     border: 1px solid #EAEAEA;
@@ -304,14 +290,10 @@
     letter-spacing: -0.2px;
     color: #B5B6BC;
     outline: none;
-
-    @media (min-width: 480px) {
-      width: 100%;
-    }
   }
 
   &__phone {
-    width: 288px;
+    width: 100%;
     height: 48px;
     background: #FFFFFF;
     border: 1px solid #EAEAEA;
@@ -322,14 +304,10 @@
     letter-spacing: -0.2px;
     color: #B5B6BC;
     outline: none;
-
-    @media (min-width: 480px) {
-      width: 100%;
-    }
   }
 
   &__mail {
-    width: 288px;
+    width: 100%;
     height: 48px;
     background: #FFFFFF;
     border: 1px solid #EAEAEA;
@@ -340,14 +318,10 @@
     letter-spacing: -0.2px;
     color: #B5B6BC;
     outline: none;
-
-    @media (min-width: 480px) {
-      width: 100%;
-    }
   }
 
   &__message {
-    width: 288px;
+    width: 100%;
     height: 118px;
     background: #FFFFFF;
     border: 1px solid #EAEAEA;
@@ -359,11 +333,6 @@
     color: #B5B6BC;
     resize: none;
     outline: none;
-
-    @media (min-width: 480px) {
-      width: 100%;
-    }
-
   }
 }
 
@@ -371,11 +340,7 @@
 .drop-down-submit {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-
-  @media (min-width: 480px) {
-    justify-content: flex-end;
-  }
+  justify-content: flex-end;
 
   &__btn {
     width: 136px;
